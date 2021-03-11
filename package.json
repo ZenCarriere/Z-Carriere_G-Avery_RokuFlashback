@@ -1,0 +1,17 @@
+{
+  "name": "zcarriere_gavery_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start-server": "nodemon server",
+    "start":"node server"
+  },
+  "keywords": [],
+  "author": "zen c and greg a",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}

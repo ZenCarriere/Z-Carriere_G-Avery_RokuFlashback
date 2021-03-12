@@ -12,8 +12,25 @@ router.use('/api', createProxyMiddleware ({
 }))
 
 router.get('/', (req, res) => {
-    res.render('index', {message: "You have arrived"});
+    res.render('index');
 })
+
+router.get('/movies', (req, res) => {
+    res.render('movies');
+})
+
+router.get('/tv', (req, res) => {
+    res.render('tv');
+})
+
+router.get('/music', (req, res) => {
+    res.render('music');
+})
+
+router.get('/accounts', (req, res) => {
+    res.render('accounts');
+})
+
 
 router.use((req,res) => {
     res.status(404);

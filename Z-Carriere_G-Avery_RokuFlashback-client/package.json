@@ -1,5 +1,5 @@
 {
-  "name": "roku_client",
+  "name": "roku_client_w21",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -7,7 +7,7 @@
     "start": "node app",
     "start-dev": "nodemon app"
   },
-  "author": "zen C and greg a",
+  "author": "zen c and greg a",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",

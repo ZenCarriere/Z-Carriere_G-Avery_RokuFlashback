@@ -4,7 +4,7 @@ const sqlCreds = {
     password: "",
     host: "localhost",
     port: 3306,
-    database: "db_movies"
+    database: "db_roku"
 }
 
 module.exports = sqlCreds;

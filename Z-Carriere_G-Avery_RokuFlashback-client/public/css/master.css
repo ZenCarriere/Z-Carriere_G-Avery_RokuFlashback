@@ -1,0 +1,449 @@
+body{
+    background-image:url("../images/blue.png");
+    background-size:150%;
+    color:white;
+}
+
+.hidden{
+    display:none;
+}
+
+header{
+    background-color: rgba(0,0,0,.3);
+}
+
+footer{
+    background-color: rgba(0,0,0,.3);
+    margin-bottom:0px;
+}
+
+header img{
+    width:80%;
+    display:block;
+    margin:auto;
+    padding-top:25px;
+    padding-bottom:20px;
+}
+
+.welcome{
+    margin-top:40px;
+}
+
+.namebar{
+    margin-top:20px;
+    margin-bottom:50px;
+    display:block;
+    align-items:left;
+}
+
+.bars{
+    width:100%;
+    margin-bottom:5px;
+}
+
+.go{
+    background-color:rgb(97, 6, 172);
+    margin-top:15px;
+    margin-bottom:100px;
+    padding:10px;
+    padding-left:25px;
+    padding-right:25px;
+}
+
+.account{
+    margin-bottom:30px;
+    align-items:center;
+    display: flex;
+    flex-direction:column;
+}
+
+.account img{
+    width:70%;
+}
+
+.accounts{
+    margin-top:50px;
+    margin-bottom:30px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.menu, .kidmenu{
+    background-color:rgb(58, 67, 146);
+    text-align:center;
+    border-radius: 0px 0px 15px 15px;
+
+}
+.menu ul, .kidmenu ul{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+}
+
+.menu li, .kidmenu li{
+    display:inline;
+}
+
+.menu li p, .kidmenu li p{
+    display:inline;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:5px;
+}
+
+.home h2, .moviepage h2, .musicpage h2, .tvpage h2, .kidshome h2{
+    font-size:25px;
+    margin-left:5%;
+}
+
+.new{
+    margin-top:50px;
+}
+
+.genres{
+    display:flex;
+    margin-bottom:30px;
+    margin-top:30px;
+}
+
+.square{
+    width:100px;
+    padding-top:32px;
+    padding-bottom:32px;
+    text-align:center;
+    margin:auto;
+}
+
+.square h3{
+    font-size:22px;
+}
+
+.blue{
+    background-color:rgb(96, 109, 224);
+}
+
+.kidblue{
+    background-color:rgb(51, 71, 255);
+}
+
+.magenta{
+    background-color:rgb(184, 38, 171);
+}
+
+.kidmagenta{
+    background-color:rgb(255, 41, 237);
+}
+
+.green{
+    background-color:rgb(56, 172, 75);
+}
+
+.kidgreen{
+    background-color:rgb(65, 231, 15);
+}
+
+hr{
+    border-color:white;
+}
+
+.footerroku{
+    width:40%;
+    display:block;
+    margin:auto;
+}
+
+hr{
+    width:70%;
+}
+
+.socials ul{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+}
+
+.socials li{
+    display:inline;
+}
+
+/* .socials li p?{
+    display:inline;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:5px;
+} */
+
+
+.last{
+    margin-bottom:30px;
+}
+
+.kidmenu{
+    background-color:rgb(53, 73, 255);
+    text-align:center;
+    border-radius: 0px 0px 15px 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px){
+
+    body{
+        background-image:url("../images/deskbg.jpg");
+        background-size:100%;
+    }
+    
+    header{
+        background-color: rgba(0,0,0,.3);
+    }
+    
+    footer{
+        background-color: rgba(0,0,0,.3);
+        margin-bottom:0px;
+    }
+    
+    header img{
+        width:20%;
+        padding-top:25px;
+        padding-bottom:25px;
+    }
+    
+    .welcome{
+        margin-top:200px;
+        font-size:50px;
+    }
+
+    .opener{
+        font-size:25px;
+    }
+    
+    .namebar{
+        margin-top:50px;
+        margin-bottom:50px;
+        display:block;
+        align-items:center;
+    }
+
+    .bars{
+        width:50%;
+        margin-left:75px;
+        margin-bottom:5px;
+    }
+    
+    .go{
+        background-color:rgb(97, 6, 172);
+        margin-top:15px;
+        margin-bottom:200px;
+        margin-left:75px;
+        padding:10px;
+        padding-left:25px;
+        padding-right:25px;
+    }
+    
+    .account{
+        margin-left:50px;
+        margin-right:50px;
+        margin-bottom:30px;
+        align-items:center;
+        display: flex;
+        flex-direction:column;
+    }
+    
+    .account img{
+        width:300px;
+    }
+    
+    .accounts{
+        margin-top:150px;
+        margin-bottom:150px;
+        display: flex;
+        flex-direction:row;
+        align-items:center;
+        justify-content:center;
+    }
+    
+    .menu, .kidmenu{
+        border-radius: 0, 0, 100px, 100px;
+        width:60%;
+        align-items:center;
+        display:block;
+        margin:auto;
+    }
+
+    .menu ul, .kidmenu ul{
+        list-style-type:none;
+        margin:0px;
+        padding:10px;
+    }
+    
+    .menu li, .kidmenu li{
+        display:inline;
+    }
+    
+    .menu li p, .kidmenu li p{
+        display:inline;
+        font-size:22px;
+        padding-left:60px;
+        padding-right:60px;
+        padding-bottom:30px;
+    }
+    
+    .home h2, .moviepage h2, .musicpage h2, .tvpage h2, .kidshome h2{
+        font-size:30px;
+        margin-left:40px;;
+    }
+    
+    .new{
+        margin-top:100px;
+    }
+    
+    .genres{
+        display:flex;
+        margin-bottom:30px;
+        margin-top:40px;
+    }
+
+
+    
+    .square{
+        width:170px;
+        padding-top:60px;
+        padding-bottom:60px;
+        text-align:center;
+        margin:auto;
+    }
+    
+    .square h3{
+        font-size:34px;
+    }
+    
+    .blue{
+        background-color:rgb(96, 109, 224);
+    }
+    
+    .kidblue{
+        background-color:rgb(51, 71, 255);
+    }
+    
+    .magenta{
+        background-color:rgb(184, 38, 171);
+    }
+    
+    .kidmagenta{
+        background-color:rgb(255, 41, 237);
+    }
+    
+    .green{
+        background-color:rgb(56, 172, 75);
+    }
+    
+    .kidgreen{
+        background-color:rgb(65, 231, 15);
+    }
+
+    .yellow{
+        display:unset;
+        background-color:rgb(170, 152, 49);
+    }
+
+    .kidyellow{
+        display:unset;
+        background-color:rgb(228, 202, 57);
+    }
+    
+    .orange{
+        display:unset;
+        background-color:rgb(230, 124, 64);
+    }
+
+    .kidorange{
+        display:unset;
+        background-color:rgb(255, 108, 23);
+    }
+    
+    .red{
+        display:unset;
+        background-color:rgb(185, 38, 38);
+    }
+
+    .kidred{
+        display:unset;
+        background-color:rgb(255, 22, 22);
+    }
+
+    
+    hr{
+        border-color:white;
+        height:5px;
+    }
+    
+    .footerroku{
+        width:10%;
+        display:block;
+        margin:auto;
+    }
+    
+    hr{
+        width:80%;
+    }
+    
+    .socials ul{
+        list-style-type:none;
+        margin:0px;
+        padding:0px;
+    }
+    
+    .socials li{
+        display:inline;
+    }
+    
+    /* .socials li p?{
+        display:inline;
+        padding-left:15px;
+        padding-right:15px;
+        padding-bottom:5px;
+    } */
+    
+    
+    .last{
+        margin-bottom:290px;
+    }
+    
+    .kidmenu{
+        background-color:rgb(53, 73, 255);
+        text-align:center;
+        border-radius: 0px 0px 15px 15px;
+    
+    }
+}

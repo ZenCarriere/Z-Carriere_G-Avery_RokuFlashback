@@ -23,7 +23,7 @@ export default {
                 <h3>Comedy</h3>
             </div>
 
-            <div class="square yellow">
+            <div class="square yellow hidden">
                 <h3>Drama</h3>
             </div>
 
@@ -31,7 +31,7 @@ export default {
                 <h3>Classics</h3>
             </div>
 
-            <div class="square red">
+            <div class="square red hidden">
                 <h3>Crime</h3>
             </div>
 
@@ -39,7 +39,7 @@ export default {
                 <h3>Action</h3>
             </div>
 
-            <div class="square orange">
+            <div class="square orange hidden">
                 <h3>Western</h3>
             </div>
         </div>
@@ -49,10 +49,10 @@ export default {
         <hr>
         <nav class="socials">
 		    <ul>           
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>			
+                <li><img src="images/facebook.svg" alt="Facebook logo" class="ficon"></li>
+                <li><img src="images/twitter.svg" alt="Twitter logo" class="ticon"></li>
+                <li><img src="images/youtube.svg" alt="YouTube logo" class="yicon"></li>
+                <li><img src="images/instagram.svg" alt="Instagram logo" class="iicon"></li>			
 			</ul>
 	    </nav>
         <hr class="last">

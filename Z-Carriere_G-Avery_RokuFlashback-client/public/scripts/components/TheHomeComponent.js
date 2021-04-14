@@ -15,6 +15,18 @@ export default {
 	    </nav>
         <h2 class="new">Just Added</h2>
 
+        <div class="ja">
+            <div class="videobanners">
+                <img src="images/mashLogo.png" alt="mash banner" class="videobanner" @click="">
+                <img src="images/stalag17Logo.png" alt="stalag banner" class="videobanner" @click="">
+            </div>
+            <div class="audiobanners">
+                <img src="images/abbeyRoadLogo.png" alt="abbey road banner" class="audiobanner" @click="">
+                <img src="images/abbeyRoadLogo.png" alt="abbey road banner" class="audiobanner" @click="">
+                <img src="images/abbeyRoadLogo.png" alt="abbey road banner" class="audiobanner" @click="">
+            </div>
+        </div>
+
         <h2 class="feat">Featured</h2>
     
         <div class="genres">
@@ -47,10 +59,10 @@ export default {
         <hr>
         <nav class="socials">
 		    <ul>           
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>			
+                <li><img src="images/facebook.svg" alt="Facebook logo" class="ficon"></li>
+                <li><img src="images/twitter.svg" alt="Twitter logo" class="ticon"></li>
+                <li><img src="images/youtube.svg" alt="YouTube logo" class="yicon"></li>
+                <li><img src="images/instagram.svg" alt="Instagram logo" class="iicon"></li>			
 			</ul>
 	    </nav>
         <hr class="last">

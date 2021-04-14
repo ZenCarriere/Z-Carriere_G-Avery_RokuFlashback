@@ -1,18 +1,6 @@
 <footer>
-		<p>
-			&copy; 2021 Roku Inc, All rights reserved
-		</p>
-
-		<div v-if="currentUser">           
-			<img v-if="currentUser.user_avatar" class="small-avatar-rounded" :src='"images/" + currentUser.user_avatar'></li>
-			<i class="fas fa-cog"></i>
-			<i @click="logout" class="fas fa-power-off"></i>					
-		</div>
-
-		{{!-- <ul class="float-right">
-			<li><i class="fab fa-facebook"></i></li>
-			<li><i class="fab fa-twitter-square"></i></li>
-			<li><i class="fab fa-google-plus-square"></i></li>
-			<li><i class="fab fa-instagram"></i></li>
-		</ul> --}}
-	</footer>
+	<p>&copy; 2021 Roku Inc, All rights reserved</p>
+	<img src="../images/temp_avatar.png" class="aicon">
+	<img src="../images/settings.png" class="sicon">
+	<img src="../images/log.png" class="licon" @click="logout">
+</footer>

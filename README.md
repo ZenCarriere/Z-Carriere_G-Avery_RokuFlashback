@@ -6,7 +6,7 @@
 
 Greg Avery - Front End Development and designer
 
-Zen Carriere - Back End Development and designer
+Zen Carriere - Front end Development, Back End Development, and designer
 
 ## Objective:
 Create a semi functional prototype of a streaming service webapp

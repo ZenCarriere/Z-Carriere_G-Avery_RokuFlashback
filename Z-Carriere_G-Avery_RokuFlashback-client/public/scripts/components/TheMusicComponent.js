@@ -49,10 +49,10 @@ export default {
         <hr>
         <nav class="socials">
 		    <ul>           
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>			
+                <li><img src="images/facebook.svg" alt="Facebook logo" class="ficon"></li>
+                <li><img src="images/twitter.svg" alt="Twitter logo" class="ticon"></li>
+                <li><img src="images/youtube.svg" alt="YouTube logo" class="yicon"></li>
+                <li><img src="images/instagram.svg" alt="Instagram logo" class="iicon"></li>			
 			</ul>
 	    </nav>
         <hr class="last">

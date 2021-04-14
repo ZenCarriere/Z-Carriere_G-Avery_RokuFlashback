@@ -6,12 +6,12 @@ export default {
     template: `
             <div>
                 <div v-if="liveuser.user_access === 5" class="account" @click="navToHome()">
-                    <img :src="'images/' + liveuser.user_avatar">
-                    <h2>{{liveuser.user_name}}</h2>
+                    <img :src="'images/' + liveuser.user_avatar" class="avatarimg">
+                    <section class="username"><h2>{{liveuser.user_name}}</h2> <img src="../images/pencil.png" class="pencil"></section>
                 </div>
                 <div v-else-if="liveuser.user_access === 1" class="account" @click="navToKids()">
-                    <img :src="'images/' + liveuser.user_avatar">
-                    <h2>{{liveuser.user_name}}</h2>
+                    <img :src="'images/' + liveuser.user_avatar" class="avatarimg">
+                    <section class="username"><h2>{{liveuser.user_name}}</h2> <img src="../images/pencil.png" class="pencil"></section>
                 </div>
             </div>
                 `,

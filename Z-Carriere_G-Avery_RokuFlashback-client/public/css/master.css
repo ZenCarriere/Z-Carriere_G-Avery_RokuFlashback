@@ -57,7 +57,7 @@ header img{
     flex-direction:column;
 }
 
-.account img{
+.avatarimg{
     width:70%;
 }
 
@@ -113,6 +113,7 @@ header img{
     padding-bottom:32px;
     text-align:center;
     margin:auto;
+    filter:drop-shadow(4px 4px 4px rgb(48, 48, 48));
 }
 
 .square h3{
@@ -155,16 +156,32 @@ hr{
 
 hr{
     width:70%;
+    margin-bottom:0px;
+}
+
+.socials{
+    width:100%;
 }
 
 .socials ul{
     list-style-type:none;
+    text-align:center;
     margin:0px;
     padding:0px;
 }
 
 .socials li{
     display:inline;
+    margin:0px;
+    padding:0px;
+}
+
+.socials img{
+    display:inline-block;
+    margin:0px;
+    padding:0px;
+    margin-left:10px;
+    margin-right:10px;
 }
 
 /* .socials li p?{
@@ -177,6 +194,7 @@ hr{
 
 .last{
     margin-bottom:30px;
+    margin-top:0px;
 }
 
 .kidmenu{
@@ -185,6 +203,95 @@ hr{
     border-radius: 0px 0px 15px 15px;
 
 }
+
+.ficon{
+    height:10%;
+    width:10%;
+}
+
+.ticon{
+    height:11.4%;
+    width:11.4%;
+}
+
+.yicon{
+    height:13%;
+    width:13%;
+}
+
+.iicon{
+    height:12%;
+    width:12%;
+}
+
+.videobanner{
+    width:40%;
+    margin-bottom:20px;
+    margin:10px;
+}
+
+.videobanners{
+    text-align:center;
+    margin:auto;
+}
+
+.audiobanner{
+    width:20%;
+    margin-bottom:50px;
+    margin:10px;
+}
+
+.audiobanners{
+    text-align:center;
+    margin:auto;
+    margin-bottom:35px;
+}
+
+footer{
+position:absolute;
+width:100%;
+}
+
+footer p{
+    display:inline;
+    float:left;
+}
+
+.aicon{
+    width:17px;
+    height:17px;
+    float:right;
+    margin-left:2%;
+    margin-top:5px;
+    margin-right:1%;
+}
+
+.sicon{
+    width:17px;
+    height:17px;
+    float:right;
+    margin-left:2%;
+    margin-top:5px;
+}
+
+.licon{
+    width:17px;
+    height:17px;
+    float:right;
+    margin-top:5px;
+}
+
+.username{
+    display:flex;
+    flex-direction:row;
+}
+.pencil{
+    margin-left:15px;
+    margin-top:12px;
+    width:20px;
+    height:20px;
+}
+
 
 
 
@@ -280,7 +387,7 @@ hr{
         flex-direction:column;
     }
     
-    .account img{
+    .avatarimg{
         width:300px;
     }
     
@@ -415,7 +522,7 @@ hr{
     }
     
     hr{
-        width:80%;
+        width:40%;
     }
     
     .socials ul{
@@ -446,4 +553,102 @@ hr{
         border-radius: 0px 0px 15px 15px;
     
     }
+
+    .ja{
+        display:flex;
+        justify-content: center;
+    }
+    
+    .videobanner{
+        width:unset;
+        margin-bottom:unset;
+        margin:unset;
+        margin:20px;
+        width:43%;
+    }
+    
+    .videobanners{
+        text-align:unset;
+        margin:unset;
+        margin-top:10px;
+        margin-bottom:40px;
+    }
+    
+    .audiobanner{
+        width:unset;
+        margin-bottom:unset;
+        margin:unset;
+        margin-bottom:unset;
+        margin:20px;
+        width:27%;
+    }
+    
+    .audiobanners{
+        text-align:unset;
+        margin:unset;
+    }
+
+    .socials img{
+        margin-left:45px;
+        margin-right:45px;
+    }
+    
+    .ficon{
+        height:3.1%;
+        width:3.1%;
+    }
+    
+    .ticon{
+        height:3.5%;
+        width:3.5%;
+    }
+    
+    .yicon{
+        height:4%;
+        width:4%;
+    }
+    
+    .iicon{
+        height:3.7%;
+        width:3.7%;
+    }
+
+    hr{
+        margin-bottom:0px;
+        width:33%;
+    }
+
+    .last{
+        margin-top:0px;
+    }
+
+    footer p{
+        margin-top:10px;
+    }
+        
+    .aicon{
+        width:32px;
+        height:32px;
+        float:right;
+        margin-left:1%;
+        margin-top:7px;
+        margin-right:1%;
+    }
+        
+        .sicon{
+            width:32px;
+            height:32px;
+            float:right;
+            margin-left:1%;
+            margin-top:7px;
+        }
+        
+        .licon{
+            width:32px;
+            height:32px;
+            float:right;
+            margin-top:7px;
+        } 
 }
+
+

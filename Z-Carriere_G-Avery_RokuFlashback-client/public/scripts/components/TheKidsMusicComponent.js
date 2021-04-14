@@ -47,10 +47,10 @@ export default {
         <hr>
         <nav class="socials">
 		    <ul>           
-                <li><img src="images/facebook.svg" alt="Facebook logo" class="ficon"></li>
-                <li><img src="images/twitter.svg" alt="Twitter logo" class="ticon"></li>
-                <li><img src="images/youtube.svg" alt="YouTube logo" class="yicon"></li>
-                <li><img src="images/instagram.svg" alt="Instagram logo" class="iicon"></li>			
+                <li><a href="https://www.facebook.com/"><img src="images/facebook.svg" alt="Facebook logo" class="ficon"></a></li>
+                <li><a href="https://twitter.com/"><img src="images/twitter.svg" alt="Twitter logo" class="ticon"></a></li>
+                <li><a href="https://www.youtube.com/"><img src="images/youtube.svg" alt="YouTube logo" class="yicon"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="images/instagram.svg" alt="Instagram logo" class="iicon"></a></li>			
 			</ul>
 	    </nav>
         <hr class="last">
@@ -58,7 +58,7 @@ export default {
     `,
 
     created: function() {
-        this.loadMedia(null, 'movies');
+        this.loadMedia(null, 'kidsmusic');
         this.$emit('setuser', this.currentuser);
         document.getElementById('bg').style.backgroundImage = 'url("../images/kidsbackground.jpg")';
     },

@@ -10,6 +10,7 @@ body{
 
 header{
     background-color: rgba(0,0,0,.3);
+    width:100%;
 }
 
 footer{
@@ -44,7 +45,7 @@ header img{
 .go{
     background-color:rgb(97, 6, 172);
     margin-top:15px;
-    margin-bottom:100px;
+    margin-bottom:20px;
     padding:10px;
     padding-left:25px;
     padding-right:25px;
@@ -193,7 +194,7 @@ hr{
 
 
 .last{
-    margin-bottom:30px;
+    margin-bottom:60px;
     margin-top:0px;
 }
 
@@ -250,6 +251,9 @@ hr{
 footer{
 position:absolute;
 width:100%;
+position: fixed;
+left: 0;
+bottom: 0;
 }
 
 footer p{
@@ -544,7 +548,7 @@ footer p{
     
     
     .last{
-        margin-bottom:290px;
+        margin-bottom:75px;
     }
     
     .kidmenu{

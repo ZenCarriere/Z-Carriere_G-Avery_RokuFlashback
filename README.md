@@ -29,7 +29,9 @@ Vue.js
 Node.js
 
 ## Installation:
-Download repo and open in a code editor. Content requires a live server to view properly on the client side, project also has Node.js dependencies.
+Download repo and open in a code editor. Content requires a live server to view properly on the client side, project also has Node.js dependencies. You will need to download the video and audio folders from the following link and place both folders in the public directory:
+
+Lastly you will need to import the database into your localhost.
 
 ## MIT License:
 MIT License

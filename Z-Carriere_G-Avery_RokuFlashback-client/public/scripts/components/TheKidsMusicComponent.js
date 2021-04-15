@@ -13,9 +13,16 @@ export default {
                 <li><p>Music</p></li>			
 			</ul>
 	    </nav>
-        <h2 class="new">Just Added</h2>
-
-        <h2 class="feat">Featured</h2>
+        <div class="audioplayer">
+            <div class="audiodetails">
+                <h3 class="audiotitle">{{currentMediaDetails.kidsmusic_title}}</h3>
+                <h4 class="audioartist">{{currentMediaDetails.kidsmusic_artist}}</h4>
+                <h4 class="audioyear">{{currentMediaDetails.kidsmusic_year}}</h4>
+                <p class="audiodesc" v-html="currentMediaDetails.kidsmusic_desc"></p>
+            </div>
+            <img :src="'../images/' + currentMediaDetails.kidsmusic_cover" alt="media thumb" class="audiothumb">
+            <audio autoplay muted controls :src="'audio/' + currentMediaDetails.kidsmusic_audio" class=""></audio>
+        </div>
     
         <div class="genres">
         <div class="square kidgreen">
@@ -43,6 +50,10 @@ export default {
             </div>
         </div>
 
+        <div class="audiocovercontainer">
+            <img v-for="media in retrievedMedia" :src="'../images/' + media.kidsmusic_cover" alt="media thumb" class="audiothumb" @click="switchCurrentMedia(media)">
+        </div>
+
         <img src="images/roku.svg" alt="Roku logo" class="footerroku" @click="logout()">
         <hr>
         <nav class="socials">
@@ -56,6 +67,13 @@ export default {
         <hr class="last">
 </div>
     `,
+
+    data() {
+        return {
+            currentMediaDetails: {},
+            retrievedMedia: [],
+        }
+    },
 
     created: function() {
         this.loadMedia(null, 'kidsmusic');
@@ -71,8 +89,14 @@ export default {
             .then(res => res.json())
             .then(data => {
                 this.retrievedMedia = data;
+
+                this.currentMediaDetails = data[Math.floor(Math.random() * data.length)];
             })
         .catch((err) => console.error(err));
+        },
+
+        switchCurrentMedia(media){
+            this.currentMediaDetails = media;
         },
 
         GoKidsHome() {

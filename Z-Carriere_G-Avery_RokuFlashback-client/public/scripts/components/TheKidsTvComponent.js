@@ -13,9 +13,15 @@ export default {
                 <li @click="GoKidsMusic()"><p>Music</p></li>			
 			</ul>
 	    </nav>
-        <h2 class="new">Just Added</h2>
 
-        <h2 class="feat">Featured</h2>
+        <div class="videoplayer">
+            <div class="videodetails">
+                <h3 class="videotitle">{{currentMediaDetails.kidstv_title}}</h3>
+                <h4 class="videoyear">{{currentMediaDetails.kidstv_year}}</h4>
+                <p class="videoplot" v-html="currentMediaDetails.kidstv_storyline"></p>
+            </div>
+            <video autoplay controls muted :src="'video/' + currentMediaDetails.kidstv_video" class=""></video>
+        </div>
     
         <div class="genres">
         <div class="square kidgreen">
@@ -43,6 +49,10 @@ export default {
             </div>
         </div>
 
+        <div class="videocovercontainer">
+            <img v-for="media in retrievedMedia" :src="'../images/' + media.kidstv_cover" alt="media thumb" class="videothumb" @click="switchCurrentMedia(media)">
+        </div>
+
         <img src="images/roku.svg" alt="Roku logo" class="footerroku" @click="logout()">
         <hr>
         <nav class="socials">
@@ -56,6 +66,13 @@ export default {
         <hr class="last">
 </div>
     `,
+
+    data() {
+        return {
+            currentMediaDetails: {},
+            retrievedMedia: [],
+        }
+    },
 
     created: function() {
         this.loadMedia(null, 'kidstv');
@@ -71,10 +88,15 @@ export default {
             .then(res => res.json())
             .then(data => {
                 this.retrievedMedia = data;
+
+                this.currentMediaDetails = data[Math.floor(Math.random() * data.length)];
             })
         .catch((err) => console.error(err));
         },
 
+        switchCurrentMedia(media){
+            this.currentMediaDetails = media;
+        },
         GoKidsMusic() {
 
             this.$router.push({ name: "kidsmusic"});

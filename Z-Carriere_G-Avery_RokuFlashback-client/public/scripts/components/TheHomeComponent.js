@@ -17,41 +17,13 @@ export default {
 
         <div class="ja">
             <div class="videobanners">
-                <img src="images/mashLogo.png" alt="mash banner" class="videobanner" @click="">
-                <img src="images/stalag17Logo.png" alt="stalag banner" class="videobanner" @click="">
+                <img src="images/mashLogo.png" alt="mash banner" class="videobanner" @click="GoTv()">
+                <img src="images/stalag17Logo.png" alt="stalag banner" class="videobanner" @click="GoMovie()">
             </div>
             <div class="audiobanners">
-                <img src="images/abbeyRoadLogo.png" alt="abbey road banner" class="audiobanner" @click="">
-                <img src="images/abbeyRoadLogo.png" alt="abbey road banner" class="audiobanner" @click="">
-                <img src="images/abbeyRoadLogo.png" alt="abbey road banner" class="audiobanner" @click="">
-            </div>
-        </div>
-
-        <h2 class="feat">Featured</h2>
-    
-        <div class="genres">
-            <div class="square green">
-                <h3>Rock</h3>
-            </div>
-
-            <div class="square yellow hidden">
-                <h3>Jazz</h3>
-            </div>
-
-            <div class="square magenta">
-                <h3>Classics</h3>
-            </div>
-
-            <div class="square red hidden">
-                <h3>Pop</h3>
-            </div>
-
-            <div class="square blue">
-                <h3>Blues</h3>
-            </div>
-
-            <div class="square orange hidden">
-                <h3>Folk</h3>
+                <img src="images/abbeyRoadLogo.png" alt="abbey road banner" class="audiobanner" @click="GoMusic()">
+                <img src="images/davidBowie_heroesLogo.png" alt="abbey road banner" class="audiobanner" @click="GoMusic()">
+                <img src="images/nirvana_nevermindLogo.png" alt="abbey road banner" class="audiobanner" @click="GoMusic()">
             </div>
         </div>
 

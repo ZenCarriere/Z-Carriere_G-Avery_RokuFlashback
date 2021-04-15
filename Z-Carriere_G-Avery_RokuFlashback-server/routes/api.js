@@ -164,7 +164,7 @@ router.get("/tv/:id", (req, res) => {
 
 router.get("/kidsmovies/:id", (req, res) => {
     
-  connect.query(`SELECT * FROM tbl_kidsmovies WHERE movies_id=${req.params.id}`, function (error, results) {
+  connect.query(`SELECT * FROM tbl_kidsmovies WHERE kidsmovies_id=${req.params.id}`, function (error, results) {
       if (error) throw error;
       res.json(results);
     });
@@ -172,7 +172,7 @@ router.get("/kidsmovies/:id", (req, res) => {
 
 router.get("/kidsmusic/:id", (req, res) => {
   
-connect.query(`SELECT * FROM tbl_kidsmusic WHERE music_id=${req.params.id}`, function (error, results) {
+connect.query(`SELECT * FROM tbl_kidsmusic WHERE kidsmusic_id=${req.params.id}`, function (error, results) {
     if (error) throw error;
     res.json(results);
   });
@@ -180,7 +180,7 @@ connect.query(`SELECT * FROM tbl_kidsmusic WHERE music_id=${req.params.id}`, fun
 
 router.get("/kidstv/:id", (req, res) => {
   
-connect.query(`SELECT * FROM tbl_kidstv WHERE tv_id=${req.params.id}`, function (error, results) {
+connect.query(`SELECT * FROM tbl_kidstv WHERE kidstv_id=${req.params.id}`, function (error, results) {
     if (error) throw error;
     res.json(results);
   });

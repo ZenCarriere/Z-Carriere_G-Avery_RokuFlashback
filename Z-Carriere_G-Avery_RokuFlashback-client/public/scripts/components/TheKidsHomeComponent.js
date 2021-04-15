@@ -15,31 +15,15 @@ export default {
 	    </nav>
         <h2 class="new">Just Added</h2>
 
-        <h2 class="feat">Featured</h2>
-    
-        <div class="genres">
-            <div class="square kidgreen">
-                <h3>Pop</h3>
+        <div class="ja">
+            <div class="videobanners">
+                <img src="images/looneyTunesLogo.png" alt="tunes banner" class="videobanner" @click="GoKidsTv()">
+                <img src="images/starWars_aNewHopeLogo.png" alt="starwars banner" class="videobanner" @click="GoKidsMovie()">
             </div>
-
-            <div class="square kidyellow hidden">
-                <h3>Rock</h3>
-            </div>
-
-            <div class="square kidmagenta">
-                <h3>Jazz</h3>
-            </div>
-
-            <div class="square kidred hidden">
-                <h3>Country</h3>
-            </div>
-
-            <div class="square kidblue">
-                <h3>Blues</h3>
-            </div>
-
-            <div class="square kidorange hidden">
-                <h3>Funk</h3>
+            <div class="audiobanners">
+                <img src="images/theJacksonFive_iWantYouBackLogo.png" alt="abbey road banner" class="audiobanner" @click="GoKidsMusic()">
+                <img src="images/buddyHolly_buddyHollyLogo.png" alt="abbey road banner" class="audiobanner" @click="GoKidsMusic()">
+                <img src="images/daftPunk_homeworkLogo.png" alt="abbey road banner" class="audiobanner" @click="GoKidsMusic()">
             </div>
         </div>
 

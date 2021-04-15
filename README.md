@@ -29,7 +29,7 @@ Vue.js
 Node.js
 
 ## Installation:
-Download repo and open in a code editor. Content requires a live server to view properly on the client side, project also has Node.js dependencies. You will need to download the video and audio folders from the following link and place both folders in the public directory:
+Download repo and open in a code editor. Content requires a live server to view properly on the client side, project also has Node.js dependencies. You will need to download the video and audio folders from the following link and place both folders in the public directory: https://drive.google.com/drive/folders/1dUX4_oq3FMZNGeegYqz0LKyTdTVeOa15?usp=sharing
 
 Lastly you will need to import the included database into your phpmyadmin.
 

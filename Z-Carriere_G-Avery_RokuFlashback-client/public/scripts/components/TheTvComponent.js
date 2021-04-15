@@ -14,9 +14,14 @@ export default {
 			</ul>
 	    </nav>
 
-        <h2 class="new">Just Added</h2>
-
-        <h2 class="feat">Featured</h2>
+        <div class="videoplayer">
+            <div class="videodetails">
+                <h3 class="videotitle">{{currentMediaDetails.tv_title}}</h3>
+                <h4 class="videoyear">{{currentMediaDetails.tv_year}}</h4>
+                <p class="videoplot" v-html="currentMediaDetails.tv_storyline"></p>
+            </div>
+            <video autoplay controls muted :src="'video/' + currentMediaDetails.tv_video" class=""></video>
+        </div>
     
         <div class="genres">
             <div class="square green">
@@ -43,6 +48,10 @@ export default {
                 <h3>Western</h3>
             </div>
         </div>
+
+        <div class="videocovercontainer">
+            <img v-for="media in retrievedMedia" :src="'../images/' + media.tv_cover" alt="media thumb" class="videothumb" @click="switchCurrentMedia(media)">
+        </div>
         
 
         <img src="images/roku.svg" alt="Roku logo" class="footerroku" @click="logout()">
@@ -59,6 +68,13 @@ export default {
 </div>
     `,
 
+    data() {
+        return {
+            currentMediaDetails: {},
+            retrievedMedia: [],
+        }
+    },
+
     created: function() {
         this.loadMedia(null, 'tv');
         this.$emit('setuser', this.currentuser);
@@ -73,8 +89,14 @@ export default {
             .then(res => res.json())
             .then(data => {
                 this.retrievedMedia = data;
+
+                this.currentMediaDetails = data[Math.floor(Math.random() * data.length)];
             })
         .catch((err) => console.error(err));
+        },
+
+        switchCurrentMedia(media){
+            this.currentMediaDetails = media;
         },
 
         GoMovie() {

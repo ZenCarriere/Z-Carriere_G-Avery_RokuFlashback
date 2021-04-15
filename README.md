@@ -8,6 +8,12 @@ Greg Avery - Front End Development and designer
 
 Zen Carriere - Front end Development, Back End Development, and designer
 
+## Designer/Developer Notes:
+
+Designer Notes:
+
+Developer Notes: https://docs.google.com/document/d/1jriHwD3hC4skSZ4d-gPPMMIGYAlAFK35LhhqpYo4wk8/edit?usp=sharing
+
 ## Objective:
 Create a semi functional prototype of a streaming service webapp
 

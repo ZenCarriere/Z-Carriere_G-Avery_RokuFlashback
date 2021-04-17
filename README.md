@@ -10,7 +10,7 @@ Zen Carriere - Front end Development, Back End Development, and designer
 
 ## Designer/Developer Notes:
 
-Designer Notes:
+Designer Notes: https://docs.google.com/document/d/1Vax-pmZukpQs_gqw0j32hqIGHffiuGYTwnXy3ARZPTc/edit?usp=sharing
 
 Developer Notes: https://docs.google.com/document/d/1jriHwD3hC4skSZ4d-gPPMMIGYAlAFK35LhhqpYo4wk8/edit?usp=sharing
 
